@@ -49,7 +49,7 @@ finally:
 
 
     print("sebbe är homo och joel gillar sebbe lite tror jag")
-
+    time.sleep(0.1)
     print("bobo suger på den polska horans stortå")
 
     print("helvete va gott det hade vart med en kall sejdel och en pizza på moreno")
