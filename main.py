@@ -46,3 +46,5 @@ except KeyboardInterrupt:
 finally:
     pwm.stop()
     GPIO.cleanup()
+
+    print("sebbe är homo")
