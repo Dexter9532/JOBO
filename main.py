@@ -8,6 +8,18 @@ import logging
 # Pin configuration
 LED_PIN = 18  # Replace with your GPIO pin number
 
+# Logging configuration
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+
+# Signal handler to clean up GPIO on exit
+def signal_handler(sig, frame):
+    logger.info("Signal received: %s", sig)
+    GPIO.cleanup()
+    sys.exit(0)                                                                                 
+
 # GPIO setup
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED_PIN, GPIO.OUT)
