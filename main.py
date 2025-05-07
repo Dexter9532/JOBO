@@ -1,6 +1,9 @@
 import RPi.GPIO as GPIO
 import time
-im
+import sys
+import os
+import signal
+import logging
 
 # Pin configuration
 LED_PIN = 18  # Replace with your GPIO pin number
