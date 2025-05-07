@@ -47,4 +47,4 @@ finally:
     pwm.stop()
     GPIO.cleanup()
 
-    print("sebbe är homo")
+    print("sebbe är homo och joel gillar sebbe lite tror jag")
